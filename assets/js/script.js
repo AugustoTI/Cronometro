@@ -24,6 +24,8 @@ function criarHoraDosSegundos(segundos) {
 butaoIniciar.addEventListener("click", function () {
    clearInterval(timer);
    iniciarRelogio();
+   relogio.classList.remove('pausar')
+   relogio.classList.add('relogio')
 });
 
 butaoParar.addEventListener("click", function () {
